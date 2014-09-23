@@ -23,7 +23,7 @@ lock_mutex:
 	.global unlock_mutex
 	.type unlock_mutex, function
 unlock_mutex:
-    ldr r1 , =unlocked
+    	ldr r1 , =unlocked
 	str r1, [r0]  
 	bx lr
 	.size unlock_mutex, .-unlock_mutex
